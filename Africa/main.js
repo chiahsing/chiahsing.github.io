@@ -56,8 +56,8 @@ var country_list = [
 ];
 
 // Random numbers between 0 and 53. Chosen by fair dice roll. Guaranteed to be random.
-var random = [20, 46, 48, 24, 18, 36, 49, 34, 47, 6, 13, 30, 44, 15, 19, 26, 5, 4, 3, 50, 39, 27, 31, 37, 11, 28, 42, 52, 21, 45, 22, 23, 14, 32, 29, 12, 16, 53, 17, 7, 1, 25, 2, 40, 43, 10, 9, 41, 51, 35, 0, 8, 33, 38];
-
+var random = [18, 49, 41, 9, 22, 48, 14, 4, 0, 53, 39, 26, 21, 15, 1, 19, 16, 5, 34, 3, 2, 37, 40, 11, 27, 12, 30, 42, 25, 28, 50, 38, 35, 45, 8, 17, 10, 36, 13, 51, 43, 44, 52, 24, 20, 31, 46, 7, 29, 23, 47, 32, 6, 33];
+	
 var num_countries = country_list.length;
 var num_quizzes = 30;
 var num_choices = 4;
