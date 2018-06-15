@@ -112,6 +112,7 @@ function ShowQuiz() {
 	$("#progress").text(progress);
 	
 	// Show images/
+	$("#map").hide();
 	$("#map").attr("src", "images/" + country + ".svg");
 	
 	// Show choices.
@@ -147,6 +148,9 @@ function SubmitAnswer(value) {
 
 function main() {
 	$("#result").hide();
+	$("#map").on("load", function() {
+		$("#map").show();
+	});
 	NextQuiz();
 	for (var i = 0; i < num_choices; ++i) {
 		$("#button" + i).click(function(e) {
