@@ -1,0 +1,3 @@
+[submodule "dashcast"]
+	path = dashcast
+	url = https://github.com/chiahsing/dashcast.git
