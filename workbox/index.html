@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script type="module">
+        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-window.prod.mjs';
+        if ('serviceWorker' in navigator) {
+            const wb = new Workbox('sw.js');
+            wb.register();
+        }
+    </script>
+    <script>
+        function fetchTest() {
+            fetch('index.html', {
+                method: 'GET',
+                cache: 'no-cache',
+                headers: {
+                    'authorization': 'Bearer abcde'
+                }
+            })
+                .then((response) => response.text())
+                .then((text) => {
+                    console.log('Response text:', text);
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="fetchTest()">Test</button>
+</body>
+
+</html>
